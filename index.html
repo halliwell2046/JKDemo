@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JK Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+<style>
+  /* Floating Back to Top Button */
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f7a100; /* button color */
+    color: #0d274d; /* text color */
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+  }
+
+  #backToTop:hover {
+    background-color: #0d274d;
+    color: #f7a100;
+    transform: translateY(-3px);
+  }
+
+  /* Optional smooth scrolling behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="main-navbar" Class="navbar navbar-expand-lg navbar-dark  px-3 w-100">
+    <a href="index.html">
+  <img src="assets/placeholder.jpg" alt="#" width="100" height="100">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Why Choose Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Free Estimate</a></li>
+        <li class="nav-item"><a class="nav-link" href="./contactus.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>of the printing and typesetting industry.</h1>
+      <button class="btn cta-btn mt-3">Contact Us</button>
+    </div>
+  </section>
+
+  <!-- Why Choose Section -->
+  <section class="py-5" id="why-choose">
+    <div class="container" >
+      <h3 class="text-center mb-4">Lorem Ipsum has been the industry's standard</h3>
+      <p class="text-center">
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="section-dark py-5" id="services-overview">
+    <div class="container">
+      <h4 class="text-center mb-5">It has survived not only five centuries,</h4>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <img src="assets/placeholder.jpg" class="img-fluid mb-3" alt="Residential" />
+          <h5>but</h5>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/placeholder.jpg" class="img-fluid mb-3" alt="Commercial" />
+          <h5>also</h5>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/placeholder.jpg" class="img-fluid mb-3" alt="Multi-Family" />
+          <h5>the</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Grid -->
+  <section class="py-5 product-grid" id="Gallery">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        <!-- Repeat this block for each product -->
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">leap into</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">electronic typesetting,</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">remaining essentially unchanged</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2"> It was popularised in</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">the 1960s</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">with the release</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">of Letraset sheets</p>
+        </div>
+        <div class="col">
+          <img src="assets/placeholder.jpg" alt="#">
+          <p class="text-center mt-2">containing Lorem</p>
+        </div>
+        <!-- Add more blocks as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-white py-5" id="free-estimate">
+    <div class="container text-center">
+       <h3 class="text-center mb-4">Ipsum passages, and more</h3>
+      <p class="text-center">
+      recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      <button class="btn btn-light mt-3" onclick="window.location.href='contactus.html'">Where does it come from?</button>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="py-5" id="reviews">
+    <div class="container text-center">
+      <h3>Contrary</h3>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <p> to popular belief,</p>
+        </div>
+        <div class="col-md-4">
+          <p>Lorem Ipsum is not simply</p>
+        </div>
+        <div class="col-md-4">
+          <p>random text. It has roots</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-6 mb-3">
+          <p><a href="index.html">© in a piece</a></p>
+          <p>497 Evergreen Rd, Roseville, CA 95673</p>
+          <p>+44 345 678 903</p>
+          <p><a href="#">non@none.com</a>
+</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-white me-3">Facebook</a>
+          <a href="#" class="text-white me-3">Twitter</a>
+          <a href="#" class="text-white">Instagram</a>
+        </div>
+        <a href="https://josephkempproductions.com/" class="text-white mt-3 d-block">Website by Joseph Kemp Productions</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- Back to Top Button -->
+<button id="backToTop" onclick="scrollToTop()">Top</button>
+
+<script>
+  
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  const btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.style.display = 'block';
+    } else {
+      btn.style.display = 'none';
+    }
+  });
+
+
+  btn.style.display = 'none';
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
